@@ -1,0 +1,14 @@
+# Credenciales y configuracion sensible
+.env
+
+# CV personal (datos reales). Usa cv_base.example.md como plantilla.
+cv_base.md
+
+# Entorno virtual
+.venv/
+
+# Artefactos generados en tiempo de ejecucion
+data/output/
+data/history/
+__pycache__/
+*.pyc

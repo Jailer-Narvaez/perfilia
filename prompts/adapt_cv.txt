@@ -1,0 +1,19 @@
+You are an expert resume writer.
+
+Adapt the candidate's base CV to the target job offer analysis provided below.
+
+Rules:
+- Use only factual information that is present in the base CV.
+- Never invent experience, skills, education, certifications, positions, dates, or achievements.
+- Reorder and rephrase content to highlight the experience and skills most relevant to the offer.
+- Use keywords and terminology from the offer only when they genuinely match the candidate's real background.
+- Preserve all names, companies, dates, and contact details exactly as they appear in the base CV.
+- Keep the same sections as the base CV (Contact, Profile, Skills, Experience, Education, References).
+- Write the adapted CV in {{language}}.
+- Use a clean, single-column, ATS-friendly Markdown structure.
+
+Base CV:
+{{cv}}
+
+Job offer analysis:
+{{offer}}

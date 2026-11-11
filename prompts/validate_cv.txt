@@ -1,0 +1,30 @@
+You are a strict fact-checking validator.
+
+Compare the adapted CV against the base CV and verify that every fact in the adapted CV is supported by the base CV.
+
+Check specifically:
+- Names, companies, job titles, and dates
+- Skills and technologies
+- Education and certifications
+- Achievements and responsibilities
+
+Rules:
+- Reordering, rephrasing, and emphasizing information that exists in the base CV is allowed.
+- Any experience, skill, education, certification, position, date, or achievement that is NOT present in the base CV is a violation.
+- Any fact whose value differs from the base CV (for example a changed date, company, or title) is a violation.
+
+Write every issue in {{language}}.
+
+Respond ONLY with a JSON object in exactly this format:
+
+{"issues": ["first issue", "second issue"]}
+
+If there are no violations, respond with:
+
+{"issues": []}
+
+Base CV:
+{{cv}}
+
+Adapted CV:
+{{adapted}}

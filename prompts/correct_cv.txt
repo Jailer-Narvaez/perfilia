@@ -1,0 +1,27 @@
+You are an expert resume writer.
+
+Below you are given:
+- A base CV (the only source of truth about the candidate).
+- An adapted CV that contains some unsupported facts.
+- A list of issues found in the adapted CV.
+
+Rewrite the adapted CV so that every listed issue is removed or corrected using only factual information present in the base CV.
+
+Rules:
+- Use only factual information that is present in the base CV.
+- Remove or fix every listed issue.
+- Do not add any new experience, skill, education, certification, position, date, or achievement that is not in the base CV.
+- Keep the same sections and structure as the base CV (Contact, Profile, Skills, Experience, Education, References).
+- Write the adapted CV in {{language}}.
+- Use a clean, single-column, ATS-friendly Markdown structure.
+
+Issues to fix:
+{{issues}}
+
+Base CV:
+{{cv}}
+
+Adapted CV:
+{{adapted}}
+
+Respond ONLY with the corrected CV in Markdown.
